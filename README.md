@@ -1,5 +1,2 @@
 # weather-api
-#STEP-1 install npm init
-#STEP-2 npm i express
-#STEP-3 npm install body-parser
-#STEP-3 To runt he code you can either use node app.js or nodemon
+Node.js script that creates an express web server. The server listens for HTTP GET and POST requests on the root ('/') path, and responds by serving an HTML file or performing an API request, respectively. When a GET request is received, the server sends the contents of an HTML file called 'index.html'. When a POST request is received, the server sends an API request to the OpenWeatherMap API using the 'https' module, and then sends a response to the client with the weather data received from the API. The server also uses the 'body-parser' module to parse the request body and make the POST data available to the server via the 'req.body' object. The server listens for connections on port 3000 and logs a message to the console when it is started.
